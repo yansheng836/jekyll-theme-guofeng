@@ -11,17 +11,22 @@
 - 图表展示支持
 - 宽屏布局
 
-## 安装
+## 快速开始
 
-### 方式一：直接使用 GitHub Pages
+### 方式一：GitHub Pages（推荐）
 
-在 `_config.yml` 中添加：
+在项目根目录创建 `_config.yml`，写入以下内容即可：
 
 ```yaml
 remote_theme: yansheng836/jekyll-theme-guofeng
+title: 你的网站标题
+description: 你的网站描述
+
+plugins:
+  - jekyll-remote-theme
 ```
 
-### 方式二：作为 Gem 主题
+### 方式二：Gem 主题
 
 在 `Gemfile` 中添加：
 
@@ -37,17 +42,22 @@ theme: jekyll-theme-guofeng
 
 ## 配置
 
-在 `_config.yml` 中可以自定义以下配置：
+主题专属配置使用 `guofeng:` 命名空间（不要用 `theme:`，会覆盖 Jekyll 的主题字段）：
 
 ```yaml
+remote_theme: yansheng836/jekyll-theme-guofeng
 title: 网站标题
 description: 网站描述
-lang: zh-CN  # 语言设置
+lang: zh-CN
 
-# 主题特定配置
-theme:
-  show_toc: true  # 是否显示目录导航
-  wide_layout: true  # 是否使用宽屏布局
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+
+# 主题配置
+guofeng:
+  show_toc: true      # 是否显示目录导航
+  wide_layout: true   # 是否使用宽屏布局
 ```
 
 ## 目录结构
@@ -72,26 +82,9 @@ theme:
 │   ├── js/
 │   │   └── navigation.js # 导航脚本
 │   └── images/
-├── docs/                 # 文档
 ├── _config.yml           # 示例配置
 ├── Gemfile
 └── jekyll-theme-guofeng.gemspec
-```
-
-## 使用示例
-
-### 表格展示
-
-```markdown
-| 列1 | 列2 | 列3 |
-|:----|----:|:---:|
-| 左对齐 | 右对齐 | 居中 |
-```
-
-### 图表展示
-
-```markdown
-![图表描述](assets/images/chart.png)
 ```
 
 ## 许可证

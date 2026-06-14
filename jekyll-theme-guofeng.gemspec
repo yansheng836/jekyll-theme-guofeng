@@ -5,8 +5,8 @@ Gem::Specification.new do |s|
   s.authors       = ["yansheng836"]
   s.email         = ["yansheng836@163.com"]
   s.homepage      = "https://github.com/yansheng836/jekyll-theme-guofeng"
-  s.summary       = "A Jekyll theme with Chinese traditional style (Guofeng) for anime and data visualization"
-  s.description   = "A Jekyll theme featuring Chinese traditional style (Guofeng), anime aesthetics, pink-blue color scheme, TOC navigation, and responsive design."
+  s.summary       = "国风动漫风格的 Jekyll 主题"
+  s.description   = "国风动漫风格的 Jekyll 主题，B站粉蓝配色、悬浮目录导航、响应式设计、表格数据展示优化。"
 
   s.files         = `git ls-files -z`.split("\x0").select { |f|
     f.match(%r{^(assets|_layouts|_includes|_sass|LICENSE|README)}i)
