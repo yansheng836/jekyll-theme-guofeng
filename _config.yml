@@ -1,8 +1,9 @@
 theme: jekyll-theme-guofeng
-title: 网站标题
-description: 网站描述
+title: 国风主题
+description: A Jekyll theme with Chinese traditional style (Guofeng) for anime and data visualization
 lang: zh-CN
-url: ""
+url: "https://yansheng836.github.io"
+baseurl: "/jekyll-theme-guofeng"
 
 # 主题特定配置
 theme:
