@@ -3,7 +3,7 @@ layout: default
 title: 首页
 ---
 
-# 欢迎使用 Jekyll Theme Guofeng
+# 欢迎使用国风主题
 
 这是一个国风动漫风格的 Jekyll 主题。
 
