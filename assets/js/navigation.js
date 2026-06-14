@@ -1,7 +1,33 @@
 (function() {
   'use strict';
 
+  function initCopyButtons() {
+    var blocks = document.querySelectorAll('.highlight');
+    blocks.forEach(function(block) {
+      if (block.querySelector('.copy-btn')) return;
+      var btn = document.createElement('button');
+      btn.className = 'copy-btn';
+      btn.textContent = '复制';
+      btn.addEventListener('click', function() {
+        var code = block.querySelector('pre');
+        if (!code) return;
+        var text = code.textContent;
+        navigator.clipboard.writeText(text).then(function() {
+          btn.textContent = '已复制';
+          btn.classList.add('copied');
+          setTimeout(function() {
+            btn.textContent = '复制';
+            btn.classList.remove('copied');
+          }, 2000);
+        });
+      });
+      block.appendChild(btn);
+    });
+  }
+
   function init() {
+    initCopyButtons();
+
     var content = document.querySelector('.main-content');
     if (!content) return;
 
