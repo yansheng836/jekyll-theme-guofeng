@@ -1,0 +1,182 @@
+// ===== 组件样式 =====
+
+// ===== 标题 =====
+.main-content {
+  h1 {
+    font-size: 26px;
+    color: $text-primary;
+    border-bottom: 2px solid $bili-pink;
+    padding-bottom: 8px;
+  }
+
+  h2 {
+    font-size: 20px;
+    color: $text-primary;
+    border-left: 4px solid $bili-pink;
+    padding-left: 12px;
+    margin-top: 28px;
+  }
+
+  h3 {
+    font-size: 17px;
+    color: $text-primary;
+  }
+}
+
+// ===== 表格 =====
+.main-content table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 16px 0;
+  font-size: 13px;
+  border: 1px solid $border-light;
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 8px;
+  box-shadow: $shadow-sm;
+}
+
+.main-content thead {
+  background: $primary-gradient;
+  color: #fff;
+}
+
+.main-content th {
+  font-weight: 600;
+  padding: 10px 8px;
+  border: 1px solid rgba(255,255,255,0.15);
+  text-align: center;
+  white-space: nowrap;
+  font-size: 13px;
+}
+
+.main-content td {
+  padding: 8px;
+  border: 1px solid $border-light;
+}
+
+.main-content tbody tr:nth-child(even) {
+  background-color: rgba($bili-pink, 0.04);
+}
+
+.main-content tbody tr:hover {
+  background: linear-gradient(135deg, rgba($bili-pink, 0.08), rgba($bili-blue, 0.04));
+}
+
+// ===== 图片（图表） =====
+.main-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid $border-light;
+  box-shadow: $shadow-md;
+  margin: 12px 0;
+}
+
+// 只有独立占行的图片（图表）才撑满，不影响行内 shields 徽章
+.main-content p:has(> img:only-child) img {
+  width: 100%;
+}
+
+// ===== 左侧导航按钮 =====
+.toc-nav-btn {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1001;
+  background: $primary-gradient;
+  color: #fff;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  width: 28px;
+  padding: 18px 0;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: $shadow-md;
+  writing-mode: vertical-rl;
+  letter-spacing: 6px;
+  user-select: none;
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+  transition: box-shadow 0.2s;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:active {
+    box-shadow: $shadow-sm;
+  }
+}
+
+// 导航面板
+.toc-nav-panel {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1002;
+  width: 240px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: $shadow-md;
+  padding: 20px 0 16px;
+  overflow-y: auto;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+
+  &.open {
+    transform: translateX(0);
+  }
+
+  .toc-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: $bili-pink;
+    padding: 0 20px 12px;
+    border-bottom: 1px solid $border-light;
+    margin-bottom: 8px;
+  }
+
+  a {
+    display: block;
+    padding: 8px 20px;
+    font-size: 13px;
+    color: $text-secondary;
+    text-decoration: none;
+    transition: all 0.15s;
+    border-left: 3px solid transparent;
+    line-height: 1.4;
+    word-break: break-all;
+
+    &:hover,
+    &:active {
+      color: $bili-pink;
+      background: rgba($bili-pink, 0.05);
+      border-left-color: $bili-pink;
+    }
+
+    &.toc-h3 {
+      padding-left: 32px;
+      font-size: 12px;
+    }
+  }
+}
+
+// 遮罩层
+.toc-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+
+  &.open {
+    opacity: 1;
+    visibility: visible;
+  }
+}

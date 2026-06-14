@@ -1,0 +1,88 @@
+// ===== 布局样式 =====
+
+.main-content {
+  max-width: $content-width !important;
+  width: $content-width !important;
+  padding: 2rem 1rem !important;
+  margin: 0 auto;
+
+  @media (min-width: 1400px) {
+    max-width: $content-max-width !important;
+  }
+}
+
+// ===== 顶部渐变横幅 =====
+.page-header {
+  background: $primary-gradient;
+  padding: 3rem 1rem !important;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -40%;
+    right: -8%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -25%;
+    left: -5%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(255,255,255,0.06) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+}
+
+.project-name {
+  color: #fff !important;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  font-weight: 700 !important;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  font-size: 2.5rem;
+}
+
+.project-tagline {
+  color: rgba(255,255,255,0.9) !important;
+  font-style: normal !important;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding: 0.5rem 0 0;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.btn {
+  display: none !important;
+}
+
+// ===== 底部 =====
+.site-footer {
+  border-top: 1px solid $border-light;
+  padding: 20px 1rem;
+  margin-top: 0;
+  text-align: center;
+  color: $text-secondary;
+  font-size: 13px;
+
+  a {
+    color: $bili-blue;
+
+    &:hover {
+      color: $bili-pink;
+    }
+  }
+}

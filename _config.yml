@@ -1,0 +1,24 @@
+theme: jekyll-theme-guofeng
+title: 网站标题
+description: 网站描述
+lang: zh-CN
+url: ""
+
+# 主题特定配置
+theme:
+  show_toc: true
+  wide_layout: true
+
+# SEO
+twitter:
+  username: yansheng836
+logo: /assets/images/logo.png
+
+# 构建排除
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - docs
+  - "*.gemspec"
