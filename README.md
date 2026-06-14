@@ -6,6 +6,7 @@
 
 - B站粉蓝配色方案（动漫国风）
 - 左侧悬浮目录导航
+- 代码语法高亮（Rouge）+ 一键复制
 - 响应式设计，支持移动端
 - 表格数据展示优化
 - 图表展示支持
@@ -59,7 +60,8 @@ guofeng:
 │   ├── _base.scss        # 基础样式
 │   ├── _layout.scss      # 布局样式
 │   ├── _components.scss  # 组件样式
-│   └── _responsive.scss  # 响应式样式
+│   ├── _responsive.scss  # 响应式样式
+│   └── _syntax.scss      # 代码高亮样式
 ├── assets/
 │   ├── css/
 │   │   └── style.scss    # 主样式文件
