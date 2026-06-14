@@ -1,0 +1,119 @@
+// ===== 代码语法高亮（Rouge） =====
+
+.highlight {
+  pre {
+    background: #2d2d2d;
+    color: #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    overflow-x: auto;
+    box-shadow: $shadow-sm;
+  }
+
+  .c, .c1, .cm, .cs, .cd, .cp, .cpf {
+    color: #999;
+    font-style: italic;
+  }
+
+  .k, .kd, .kn, .kp, .kr, .kt {
+    color: #cc99cd;
+  }
+
+  .kc {
+    color: #cc99cd;
+    font-weight: bold;
+  }
+
+  .kd {
+    color: #cc99cd;
+  }
+
+  .kn {
+    color: #cc99cd;
+  }
+
+  .kp {
+    color: #cc99cd;
+  }
+
+  .kr {
+    color: #cc99cd;
+  }
+
+  .kt {
+    color: #cc99cd;
+  }
+
+  .m, .mf, .mh, .mi, .mi-Il, .mo {
+    color: #f99157;
+  }
+
+  .s, .s1, .s2, .sb, .sc, .sd, .s2-Il, .sh, .si, .sx, .sr, .s1-Il, .dl {
+    color: #99cc99;
+  }
+
+  .na {
+    color: #6ab0de;
+  }
+
+  .nb {
+    color: #f99157;
+  }
+
+  .nc {
+    color: #f99157;
+  }
+
+  .no {
+    color: #f99157;
+  }
+
+  .nd {
+    color: #f99157;
+  }
+
+  .ni {
+    color: #f99157;
+  }
+
+  .ne {
+    color: #f99157;
+  }
+
+  .nf, .fm {
+    color: #f99157;
+  }
+
+  .nl {
+    color: #f99157;
+  }
+
+  .nn {
+    color: #f99157;
+  }
+
+  .nt {
+    color: #e2777a;
+  }
+
+  .nv, .vi, .vc, .vg, .il {
+    color: #f99157;
+  }
+
+  .w {
+    color: #ccc;
+  }
+
+  .err {
+    color: #f2777a;
+    background: none;
+  }
+
+  .p {
+    color: #ccc;
+  }
+
+  .o, .ow {
+    color: #6ab0de;
+  }
+}

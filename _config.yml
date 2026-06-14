@@ -8,6 +8,13 @@ baseurl: "/jekyll-theme-guofeng"
 plugins:
   - jekyll-seo-tag
 
+# Markdown 配置
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
 # 主题特定配置
 guofeng:
   show_toc: true
