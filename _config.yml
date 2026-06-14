@@ -5,8 +5,11 @@ lang: zh-CN
 url: "https://yansheng836.github.io"
 baseurl: "/jekyll-theme-guofeng"
 
+plugins:
+  - jekyll-seo-tag
+
 # 主题特定配置
-theme:
+guofeng:
   show_toc: true
   wide_layout: true
 
