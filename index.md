@@ -23,4 +23,4 @@ title: 首页
 
 ## 示例图片
 
-![示例图片](https://via.placeholder.com/800x400)
+![示例图片](https://placehold.co/800x400/FF6699/FFFFFF?text=Guofeng+Theme)
