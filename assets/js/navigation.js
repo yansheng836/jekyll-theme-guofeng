@@ -1,6 +1,17 @@
 (function() {
   'use strict';
 
+  function wrapTables() {
+    var tables = document.querySelectorAll('.main-content table');
+    tables.forEach(function(table) {
+      if (table.parentElement.classList.contains('table-wrap')) return;
+      var wrap = document.createElement('div');
+      wrap.className = 'table-wrap';
+      table.parentNode.insertBefore(wrap, table);
+      wrap.appendChild(table);
+    });
+  }
+
   function initCopyButtons() {
     var blocks = document.querySelectorAll('.highlight');
     blocks.forEach(function(block) {
@@ -19,6 +30,11 @@
             btn.textContent = '复制';
             btn.classList.remove('copied');
           }, 2000);
+        }).catch(function() {
+          btn.textContent = '复制失败';
+          setTimeout(function() {
+            btn.textContent = '复制';
+          }, 2000);
         });
       });
       block.appendChild(btn);
@@ -26,6 +42,7 @@
   }
 
   function init() {
+    wrapTables();
     initCopyButtons();
 
     var content = document.querySelector('.main-content');
@@ -76,6 +93,13 @@
           close();
         } else {
           open();
+        }
+      });
+
+      btn.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          btn.click();
         }
       });
     }

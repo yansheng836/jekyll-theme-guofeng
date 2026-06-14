@@ -24,17 +24,19 @@
 }
 
 // ===== 表格 =====
+.table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 16px 0;
+  border-radius: 8px;
+  box-shadow: $shadow-sm;
+}
+
 .main-content table {
   border-collapse: collapse;
   width: 100%;
-  margin: 16px 0;
   font-size: 13px;
   border: 1px solid $border-light;
-  display: block;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  border-radius: 8px;
-  box-shadow: $shadow-sm;
 }
 
 .main-content thead {

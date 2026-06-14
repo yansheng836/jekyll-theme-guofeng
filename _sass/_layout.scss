@@ -1,20 +1,20 @@
 // ===== 布局样式 =====
 
 .main-content {
-  max-width: $content-width !important;
-  width: $content-width !important;
-  padding: 2rem 1rem !important;
+  max-width: $content-width;
+  width: $content-width;
+  padding: 2rem 1rem;
   margin: 0 auto;
 
   @media (min-width: 1400px) {
-    max-width: $content-max-width !important;
+    max-width: $content-max-width;
   }
 }
 
 // ===== 顶部渐变横幅 =====
 .page-header {
   background: $primary-gradient;
-  padding: 3rem 1rem !important;
+  padding: 3rem 1rem;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -45,9 +45,9 @@
 }
 
 .project-name {
-  color: #fff !important;
+  color: #fff;
   text-shadow: 0 2px 4px rgba(0,0,0,0.15);
-  font-weight: 700 !important;
+  font-weight: 700;
   text-align: center;
   position: relative;
   z-index: 1;
@@ -57,8 +57,8 @@
 }
 
 .project-tagline {
-  color: rgba(255,255,255,0.9) !important;
-  font-style: normal !important;
+  color: rgba(255,255,255,0.9);
+  font-style: normal;
   text-align: center;
   position: relative;
   z-index: 1;
@@ -66,10 +66,6 @@
   padding: 0.5rem 0 0;
   font-size: 1.25rem;
   font-weight: 400;
-}
-
-.btn {
-  display: none !important;
 }
 
 // ===== 底部 =====
