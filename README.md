@@ -13,8 +13,6 @@
 
 ## 快速开始
 
-### 方式一：GitHub Pages（推荐）
-
 在项目根目录创建 `_config.yml`，写入以下内容即可：
 
 ```yaml
@@ -24,20 +22,6 @@ description: 你的网站描述
 
 plugins:
   - jekyll-remote-theme
-```
-
-### 方式二：Gem 主题
-
-在 `Gemfile` 中添加：
-
-```ruby
-gem "jekyll-theme-guofeng"
-```
-
-然后在 `_config.yml` 中设置：
-
-```yaml
-theme: jekyll-theme-guofeng
 ```
 
 ## 配置
@@ -82,9 +66,7 @@ guofeng:
 │   ├── js/
 │   │   └── navigation.js # 导航脚本
 │   └── images/
-├── _config.yml           # 示例配置
-├── Gemfile
-└── jekyll-theme-guofeng.gemspec
+└── _config.yml           # 示例配置
 ```
 
 ## 许可证

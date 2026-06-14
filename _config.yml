@@ -20,9 +20,5 @@ logo: /assets/images/logo.png
 
 # 构建排除
 exclude:
-  - Gemfile
-  - Gemfile.lock
   - node_modules
   - vendor
-  - docs
-  - "*.gemspec"
