@@ -1,9 +1,9 @@
 Gem::Specification.new do |s|
   s.name          = "jekyll-theme-guofeng"
-  s.version       = "0.1.0"
+  s.version       = "0.0.1"
   s.license       = "MIT"
   s.authors       = ["yansheng836"]
-  s.email         = ["yansheng836@163.com"]
+  s.email         = ["sheng.yan836@gmail.com"]
   s.homepage      = "https://github.com/yansheng836/jekyll-theme-guofeng"
   s.summary       = "国风动漫风格的 Jekyll 主题"
   s.description   = "国风动漫风格的 Jekyll 主题，B站粉蓝配色、悬浮目录导航、响应式设计、表格数据展示优化。"
